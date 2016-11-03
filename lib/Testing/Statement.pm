@@ -8,7 +8,7 @@ has name => (is => 'lazy', => isa => Str);
 sub meow {
   my ($self, $loudly) = @_;
 
-  if ($loudly) {
+  if ($loudly && $loudly == 1) {
     return 'MEOW!';
   }
 
