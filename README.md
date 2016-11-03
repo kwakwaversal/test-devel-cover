@@ -57,7 +57,9 @@ want to report on your `POD` coverage, you might want to ignore the `BUILD`,
 `BUILDARGS` and `DEMOLISH` lifecycle routines by making them private.
 
 Passing the option `pod-also_private-BUILD` is case-sensitive and is essentially
-the same as `\*BUILD\*`, so it will ignore `BUILDARGS`, `xBUILD` etc.
+the same as `\*BUILD\*`, so it will ignore `BUILDARGS`, `xBUILD` etc. See
+[Pod::Coverage](https://p3rl.org/Pod::Coverage#Methods) for a full list of
+symbols that are regarded as private.
 
 ```
 PERL5OPT=-MDevel::Cover=-coverage,pod-also_private-BUILD-DEMOLISH prove -l t
