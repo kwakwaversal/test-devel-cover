@@ -77,6 +77,31 @@ another.
 100% branch coverage implies 100% statement coverage.
 
 ## Condition/expression
+When a boolean expression is evaluated it can be useful to ensure that all the
+terms in the expression are exercised.
+
+```perl
+  a if $x || $y
+```
+
+There are four combinations of values for $x and $y:
+
+```perl
+  $x   $y
+   0    0
+   0    1
+   1    0
+   1    1
+```
+
+For 100% condition coverage all four must be taken.
+
+## Time
+Not really code coverage, but might show up algorithm hot spots.
+
+## Documentation
+Not really code coverage, but documentation is important, right? Ensures the
+existence of documentation about each function in the public API.
 
 # Interpreting metrics
 ![image](https://cloud.githubusercontent.com/assets/1439360/19964977/a709a6a8-a1bc-11e6-94f3-a69a701eb4d2.png)
