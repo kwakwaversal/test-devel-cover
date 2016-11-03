@@ -67,12 +67,19 @@ statement.
     print "a";
   }
 
-  # This is also a branch
+  # This is also a branch (exactly the same as above)
   print "a" if $x;
 ```
 
 Full coverage is only achieved here if `$x` is true on one occasion and false on
 another.
+
+100% branch coverage implies 100% statement coverage.
+
+## Condition/expression
+
+# Interpreting metrics
+![image](https://cloud.githubusercontent.com/assets/1439360/19964933/6b10677c-a1bc-11e6-81ca-5defd5de6291.png)
 
 # Coverage options
 For all available options, please consult the
