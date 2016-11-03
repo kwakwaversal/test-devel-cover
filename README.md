@@ -79,7 +79,7 @@ another.
 ## Condition/expression
 
 # Interpreting metrics
-![image](https://cloud.githubusercontent.com/assets/1439360/19964933/6b10677c-a1bc-11e6-81ca-5defd5de6291.png)
+![image](https://cloud.githubusercontent.com/assets/1439360/19964977/a709a6a8-a1bc-11e6-94f3-a69a701eb4d2.png)
 
 # Coverage options
 For all available options, please consult the
