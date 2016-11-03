@@ -21,3 +21,4 @@ nytprof.out
 
 # Project specific ignores
 /local
+cover_db.out
