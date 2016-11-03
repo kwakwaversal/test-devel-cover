@@ -27,8 +27,34 @@ The different types of code coverage metrics.
 
 ## Statement
 This is the most basic form of code coverage. A statement is covered if it is
-executed. Note that statement != line of code. Multiple statements on a single
-line can confuse issues - the reporting if nothing else.
+executed.
+
+```perl
+  sub test {
+    my $self = shift;
+
+    # This is 2x statements. statement != line of code.
+    my $this = 1; my $that = 1;
+  }
+```
+
+Multiple statements on a single line can confuse issues - the reporting if
+nothing else.
+
+It can be quite difficult to achieve 100% statement coverage, specifically when
+sections of code deal with error conditions or rarely occurring events.
+
+```perl
+  sub validate {
+    my $c = shift;
+
+    if ($c->param('uuid') eq '0') {
+      die "This will only count if you explicitly test uuid=0";
+    }
+
+    return 1;
+  }
+```
 
 ## Branch
 The goal of branch coverage is to ensure that whenever a program can jump, it
